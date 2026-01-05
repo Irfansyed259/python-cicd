@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/your-repo/python-jenkins-docker.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
